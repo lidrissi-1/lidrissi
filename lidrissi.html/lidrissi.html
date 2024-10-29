@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر الإدريسي - الإلكترونيات</title>
+    <link rel="stylesheet" href="lidrissi.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="header-top">
+            <div class="logo">
+                <img src="logo.png" alt="شعار المتجر" class="store-logo">
+                <h1>متجر لإدريسي</h1>
+            </div>
+            <div class="language-switch">
+                <a href="#" class="lang-btn" onclick="switchToArabic()">العربية</a> |
+                <a href="#" class="lang-btn" onclick="switchToEnglish()">English</a>
+            </div>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="ابحث عن منتجات أو عروض...">
+            <button>بحث</button>
+        </div>
+
+        <nav class="main-nav">
+            <a href="#">الصفحة الرئيسية</a>
+            <a href="#">العروض</a>
+            <a href="#">تواصل معنا</a>
+        </nav>
+    </header>
+
+    <main class="category-page">
+        <aside class="sidebar">
+            <h3>تصفية المنتجات</h3>
+            <div class="filter-group">
+                <h4>الفئة</h4>
+                <ul>
+                    <li><a href="#">الإلكترونيات</a></li>
+                    <li><a href="#">الأزياء</a></li>
+                    <li><a href="#">الجمال والعناية</a></li>
+                    <li><a href="#">المنزل والمطبخ</a></li>
+                </ul>
+            </div>
+            <div class="filter-group">
+                <h4>السعر</h4>
+                <input type="range" min="0" max="10000" value="5000">
+                <span>0 درهم - 10000 درهم</span>
+            </div>
+            <div class="filter-group">
+                <h4>التقييم</h4>
+                <ul>
+                    <li><a href="#">★★★★★ فأكثر</a></li>
+                    <li><a href="#">★★★★☆ فأكثر</a></li>
+                    <li><a href="#">★★★☆☆ فأكثر</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <section class="products-list">
+            <h2>الإلكترونيات</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/200" alt="منتج 1">
+                    <h3>منتج 1</h3>
+                    <p>وصف المنتج</p>
+                    <span class="price">1000 درهم</span>
+                    <button class="order-btn" onclick="orderWhatsApp('منتج 1')">اطلب عبر واتساب</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/200" alt="منتج 2">
+                    <h3>منتج 2</h3>
+                    <p>وصف المنتج</p>
+                    <span class="price">1200 درهم</span>
+                    <button class="order-btn" onclick="orderWhatsApp('منتج 2')">اطلب عبر واتساب</button>
+                </div>
+                <!-- يمكنك إضافة المزيد من المنتجات بهذه الطريقة -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 متجر الإدريسي. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="lidrissi.js"></script>
+
+</body>
+</html>
